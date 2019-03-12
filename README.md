@@ -1,4 +1,4 @@
-# mongo-scraper
+# onion-scraper
 
 
 ### An Application to retrieve the latest headlines from 'The Onion' using:
@@ -15,7 +15,7 @@ This app scrapes for the latest headlines from 'The Onion' and provides a brief 
 ### Installation
 #### To run the application locally, first clone this repository with the following command.
 
-* git clone git@github.com:JoshJancula/mongo-scraper.git
+* git clone this repo
 
 * Next cd into mongo-scraper and run an npm install.
 
@@ -25,4 +25,4 @@ This app scrapes for the latest headlines from 'The Onion' and provides a brief 
 
 * Now, open the local application on port 3000 at the URL: http://localhost:3000/.
 
-* Enjoy your articles!
+* Enjoy!
