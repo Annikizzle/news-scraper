@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Onion Scraper</title>
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!--begin container-->
+  <div class="container">
+    
+  <!--begin jumbotron-->
+  <div class="jumbotron">
+
+<div class="row">
+  <div class="col-md-2">
+  </div>
+  <div class="col-md-8">
+      <h1 class="text-center">Onion-Scraper</h1>
+    <div class="buttons">
+  <!--button to scrape-->
+  <button class="btn btn-success btn-lg" id="scrape">Scrape</button>
+  <!--button to view saved articles-->
+  <button class="btn btn-danger btn-lg" id="view-saved">View Saved Articles</button>
+  <!--button to see new-->
+  <button class="btn btn-warning btn-lg" id="view-all">View All Articles</button>
+</div>
+</div>
+<div class="col-md-2">
+  
+</div>
+</div>
+ 
+            
+   </div>
+   <!--end jumbotron-->
+         
+            
+            
+            
+            
+<div class="row">
+  <div id="wrapper">
+    <h2><i>Articles scraped from 'The Onion'</i></h2>
+    <div id="articles"></div>
+      <div id="savedArticles"></div>
+  </div>
+  </div>
+
+
+
+
+  <!-- Modal to veiw notes -->
+  <div id="noteModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn btn-primary btn-md" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title"><strong>Notes</strong></h2>
+        </div>
+        <div class="modal-body">
+          <div id="notes"></div>
+         <div id="newNote">
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="closeModal" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!--end modal-->
+  
+  
+  </div>
+<!--end container-->
+
+  <script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
